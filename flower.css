@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    /* transition: 1s linear; */
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --pink:#ffc0cb ;
+}
+/*start header*/
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 10px 3px rgb(243, 207, 225);
+}
+.header .logo{
+    font-size: 3rem;
+    color: #f0768b;
+    font-weight: bold;
+}
+.header .nav a{
+    font-size: 1.2rem;
+    padding: 0 70px;
+    color: #666;
+}
+.header .nav a:hover{
+    color: var(--pink);
+}
+.header .icons a{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1ز1rem;
+}
+.header .icons a:hover{
+    color: #f0768b;
+}
+/*End Header*/
+/*Start home section*/
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Image/landing4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #f0768b;
+    padding: 2rem 5px;
+    line-height: 1.5;
+}
+.btn{
+    display: inline-block;
+    margin-top: .1rem;
+    border-radius: 3rem;
+    background: #333;
+    color: #fff;
+    padding: .4rem 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.btn:hover{
+    background:var(--pink) ;
+}
+/*End home section*/
+/*start about*/
+.about .box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+} 
+.about .box .image{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .box .image img{
+  width: 75%;
+  border: 1.2rem solid #fff;
+  border-radius: .3rem;
+  box-shadow: 0 .5rem 1rem rgb(0, 0, 0 , 1);
+  object-fit: cover;
+}
+.about .box .image h3{
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: #333;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    /* mix-blend-mode: screen; */
+}
+.about .box .content{
+    flex: 1 1 35rem;
+}
+.about .box .content h3{
+    font-size: 3rem;
+    color: #333;
+    text-align: left;
+}
+.about .box .content p{
+    font-size: 1.2rem;
+    color: #999;
+    padding: .3rem .2rem;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(255, 51, 153 , .05);
+}
+.heading span{
+    color: #f0768b;
+    margin: 1rem;
+}
+/*end about*/
+/*start product*/
+.prodcuts .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); 
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.prodcuts .box {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.prodcuts .box:hover {
+  transform: translateY(-0.5rem);
+}
+
+.prodcuts .box .image img {
+  width: 100%;
+  height: 13.75rem;       
+  object-fit: cover;   
+  display: block;
+  object-fit: contain;
+}
+
+.prodcuts .box .discount {
+  position: absolute;
+  background: #ff4d6d;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0 0 0.5rem 0;
+  top: 0;
+  left: 0;
+}
+
+.prodcuts .box .icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.6rem 0;
+}
+
+.prodcuts .box .icons a {
+  color: #ff4d6d;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.prodcuts .box .icons a:hover {
+  color: #333;
+}
+
+.prodcuts .box .content {
+  text-align: center;
+  padding: 0.9rem;
+}
+
+.prodcuts .box .content h3 {
+  font-size: 1.12rem;
+  margin: 0.9rem 0;
+}
+
+.prodcuts .box .content .price {
+  font-size: 16px;
+  color: #ff4d6d;
+  font-weight: bold;
+}
+
+.prodcuts .box .content .price span {
+  text-decoration: line-through;
+  color: #777;
+  margin-left: 0.5rem;
+}
+
+/*end product*/
+/*start contact*/
+.contact .box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .box form{
+    flex: 1 1 40rem;
+    padding: 2rem 2,5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+    border: .1rem solid rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+.contact .box form .box{
+    padding: .5rem;
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    margin: .8rem 0;
+}
+.contact .box form .box:focus{
+    border-color:var(--pink);
+}
+.contact .box form textarea{
+    height: 15rem;
+    resize: none ;
+}
+.contact .box .image{
+    flex: 1 1 40rem;
+}
+.contact .box .image img{
+ width: 100%;
+}
+/*end contact*/
+/*start footer*/
+.footer .container{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.footer .container .box{
+    flex: 1 1 20rem;
+}
+.footer .container .box h3{
+    color: #333;
+    font-size: 1.4rem;
+}
+.footer .container .box a{
+    display: block;
+    color: #666;
+    font-size: 1rem;
+    padding: 1.2rem 0;
+}
+.footer .container .box a:hover{
+    color: #ff4d6d;
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem ;
+    margin-top: 2.5rem;
+    font-size: 1.3rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,0.1);
+}
+.footer .credit span{
+    color: #ff4d6d;
+}
+/*end footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width:991px) {
+    html{
+        font-size: 75%;
+    }
+    .header{
+        padding: 2em;
+    }
+}
+@media (max-width:768) {
+    .header .icons{
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #eee;
+    }
+}
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }    
+    
+    .heading{
+        font-size: 3rem;
+    }
+}
