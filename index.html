@@ -1,251 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="flower.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Flower Websit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio-Esraa Masri</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-        <a href="#" class="logo">Flore</a>
-    <div class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About </a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
+  <header>
+    <h1>Hi , I'm Esraa👩🏻‍💻</h1>
+    <p>I am a front-end developer and I want to develop myself.</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I've completed the Front End course and have experience with the basics of HTML, CSS, and JavaScript.
+        I love continuous learning and experimenting with new ideas.</p>
+  </section>
+
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="card">
+        <h3>To-Do List</h3>
+        <p>A simple application to add and delete tasks using JavaScript.</p>
+         <a href="/Todo/index.html" class="view-btn">See Details</a>
+      </div>
+      <div class="card">
+        <h3>Flora Website</h3>
+        <p>Simple website using HTML & CSS</p>
+        <a href="/Flower/index.html" class="view-btn">See Details</a>
+      </div>
+      <div class="card">
+        <h3>Portfolio Page</h3>
+        <p>A personal page to introduce my work and skills.</p>
+        <a href="index.html" class="view-btn">See Details</a>
+      </div>
     </div>
-    <div class="icons">
-        <a href="#"><i class="fa fa-heart"></i></a>
-        <a href="#"><i class="fa fa-shopping-cart"></i></a>
-        <a href="#"><i class="fa fa-user"></i></a>
-    </div>
-</div>
-<!-- start home section-->
- <div class="home" id="home">
-    <div class="content">
-        <h3>Folra Flowers</h3>
-        <p>A world where flowers bloom to tell stories of beauty and love</p>
-        <a href="#" class="btn">Shop Now</a>
-    </div>
- </div>
-<!-- end home section-->
- <!--Start About-->
- <div class="about" id="about">
-    <h1 class="heading"><span>About</span>us</h1>
-    <div class="box">
-        <div class="image">
-            <img src="Image/About.jpg" decoding="async" alt="">
-            <h3>Best Flower</h3>
-        </div>
-        <div class="content">
-            <h3>Why choose us?</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos debitis 
-            laborum suscipit perferendis amet officiis neque deserunt dolorum, voluptatum architecto autem quod facilis, tempore aut.
-            laborum suscipit perferendis amet officiis neque deserunt dolorum, voluptatum architecto autem quod facilis, tempore aut.</p>
-            <a href="#" class="btn">Learn more</a>
-            
-        </div>
-    </div>
- </div>
- <!--End About-->
- <!--Start Prodcuts -->
- <div class="prodcuts" id="prodcuts">
-    <h1 class="heading">Lastest <span>Products</span></h1>
-        <div class="container">
-         <div class="box">
-        
-        <span class="discount">-10%</span>
-        <div class="image">
-            <img src="Image/Flower1.jpg" alt="">
-            <div class="icons">
-                <a href="#"><i class="fa fa-heart"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                <a href="#"><i class="fa fa-share-alt"></i></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Flower pot</h3>
-            <div class="price">$12 <span>$15</span></div>
-        </div>
-    </div>
-    <div class="box">
-        <span class="discount">-15%</span>
-        <div class="image">
-            <img src="Image/Flower2.jpg" alt="">
-            <div class="icons">
-                <a href="#"><i class="fa fa-heart"></i></a>
-                <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                <a href="#"><i class="fa fa-share-alt"></i></a>
-            </div>
-        </div>
-        <div class="content">
-            <h3>Flower pot</h3>
-            <div class="price">$16 <span>$20</span></div>
-        </div>
-    </div>
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="Image/Flower3.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="Image/Flower4.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-19%</span>
-            <div class="image">
-                <img src="Image/Flower5.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-19%</span>
-            <div class="image">
-                <img src="Image/Flower6.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-18%</span>
-            <div class="image">
-                <img src="Image/Flower7.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-17%</span>
-            <div class="image">
-                <img src="Image/Flower8.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-16%</span>
-            <div class="image">
-                <img src="Image/Flower9.jpg" alt="">
-                <div class="icons">
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Flower pot</h3>
-                <div class="price">$16 <span>$20</span></div>
-            </div>
-        </div>
-        </div>
-    </div>
-</div>
- <!--End Prodcuts -->
- <!--Start Contact-->
- <div class="contact" id="contact">
-    <h1 class="heading"><span>contact</span>us</h1>
-    <div class="box">
-        <form action="">
-            <input type="text" name="" id="" placeholder="Enter your name" class="box">
-            <input type="email" name="" id="" placeholder="Enter your email" class="box">
-            <input type="number" name="" id="" placeholder="Enter your phone" class="box">
-            <textarea name="" id="" cols="30" rows="10" placeholder="your message" class="box"></textarea>
-            <input type="submit" value="send message" class="btn">
-        </form>
-        <div class="image">
-            <img src="Image/landing3.jpg" alt="">
-        </div>
-    </div>
- </div>
- <!--End Contact-->
- <!--start footer-->
- <div class="footer">
-    <div class="container">
-        <div class="box">
-            <h3>Quick links</h3>
-            <a href="#">home</a>
-            <a href="#">about</a>
-            <a href="#">prodcuts</a>
-            <a href="#">contact</a>
-        </div>
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#">my account</a>
-            <a href="#">my order</a>
-            <a href="#">my favorite</a>
-        </div>
-        <div class="box">
-            <h3>loactions</h3>
-            <a href="#">Syria</a>
-            <a href="#">KSA</a>
-            <a href="#">UAE</a>
-        </div>
-        <div class="box">
-            <h3>contact Information</h3>
-            <a href="#">097654321</a>
-            <a href="#">esraa@gmail.com</a>
-            <a href="#">stret1-syria</a>
-        </div>
-    </div>
-    <div class="credit">created by <span> ms.esraa  </span>|all rights resved</div>
- </div>
- <!--end footer-->
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>📧 <a href="mailto:esraa4masri@gmail.com">esraa4masri@gmail.com</a></li>
+      <li>💻 <a href="https://github.com/esraa4masri" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <!-- الأزرار -->
+  <div class="buttons">
+    <button onclick="changeBg()">Change Background 🎨</button>
+    <button onclick="changeCards()">Change Cards🖌️</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
